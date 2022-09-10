@@ -84,6 +84,49 @@ public class Mensa extends RESTService {
 
       /**
    * 
+   * test2
+   *
+   * 
+   *
+   * 
+   * @return Response 
+   * 
+   */
+  @GET
+  @Path("/test2")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.TEXT_PLAIN)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "re")
+  })
+  @ApiOperation(value = "test2", notes = " ")
+  public Response test2() {
+
+
+
+
+     
+    // service method invocations
+
+     
+
+
+
+
+    // re
+    boolean re_condition = true;
+    if(re_condition) {
+      JSONObject re = new JSONObject();
+
+      
+
+      return Response.status(HttpURLConnection.HTTP_OK).entity(re.toJSONString()).build();
+    }
+    return null;
+  }
+
+  /**
+   * 
    * gettest
    *
    * 
